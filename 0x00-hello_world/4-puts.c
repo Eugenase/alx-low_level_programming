@@ -1,25 +1,11 @@
 #include <stdio.h>
-
-/*
- *
- * main - entry point
- *
- * @void: no arguments
- *
- * Description: 'the program starts and ends here.'
- *
- * Return: value 0 to exit
- *
+/**
+ * main - Entry point
+ * Return: Always 0 (Success)
  */
-
 int main(void)
-
 {
-
-	puts("\"Programming is like building a multilingual puzzle");
-
-	puts(test_str);
-
-	return (0);
-
+		char test_str[] = "\"Programming is like building a multilingual puzzle";
+			puts(test_str);
+				return (0);
 }
