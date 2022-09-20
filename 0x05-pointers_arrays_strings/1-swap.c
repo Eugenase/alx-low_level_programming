@@ -9,8 +9,8 @@
 void swap_int(int *a, int *b)
 {
 		int tmp = *a;
-		//storing the value of a inside b
+		/*storing the value of a inside b*/
 			*a = *b;
-			//swap of value of a into variable b
+	/*swap of value of a into variable b*/
 				*b = tmp;
 }
