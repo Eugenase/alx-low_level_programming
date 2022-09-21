@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /**
  * _puts - prints a string
@@ -8,8 +7,7 @@
  */
 void _puts(char *str)
 {
-	int count;
-	for(count = 0; *s != '\0'; ++s)
-		count++;
-	return (count);
+	while(*str)
+		_putchar(*str++);
+	_putchar('\n');
 }
