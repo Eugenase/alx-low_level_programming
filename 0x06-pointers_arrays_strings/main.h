@@ -1,60 +1,45 @@
-#include "main.h"
+#ifndef MAIN_H
+
+#define MAIN_H
+
+#include <stdio.h>
 
 /**
 
- * _strcat - function commute srtings
+ *void prototypes()
 
- * @dest: param pointer to a char
+ *int prototypes()
 
- * @src: param pointer to a char
-
- * Return: return value of dest
+ *char prototypes()
 
  */
 
+void reverse_array(int *a, int n);
 
+void print_number(int n);
 
-char *_strcat(char *dest, char *src)
+void print_buffer(char *b, int size);
 
-{
+int _strcmp(char *s1, char *s2);
 
-	int i;
+char *_strcat(char *dest, char *src);
 
-	int j;
+char *_strncat(char *dest, char *src, int n);
 
+char *_strncpy(char *dest, char *src, int n);
 
+char *string_toupper(char *);
 
-	i = 0;
+char *cap_string(char *);
 
-	j = 0;
+char *leet(char *);
 
+char *rot13(char *);
 
+char *infinite_add(char *n1, char *n2, char *r, int size_r);
 
-	while (dest[i] != '\0')
-
-	{
-
-		i++;
-
-	}
-
-	while (src[j] != '\0')
-
-	{
-
-		dest[i] = src[j];
-
-		j++;
-
-		i++;
-
-	}
+char *add_strings(char *n1, char *n2, char *r, int r_index);
 
 
 
-	dest[i] = '\0';
-
-	return (dest);
-
-}
-
+#endif /*MAIN_H*/

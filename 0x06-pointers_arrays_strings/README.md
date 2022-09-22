@@ -1,1 +1,1 @@
-Another pointer assignment this time 0x06-pointers
+0-strcat.c project
