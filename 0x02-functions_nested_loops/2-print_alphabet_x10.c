@@ -1,27 +1,35 @@
-#include "main.h"
+#include"main.h"
+
+
+
 /**
 
- * print_alphabet - utilizes on the _putchar function to print
+ * print_alphabet_x10 - function that will print the alphabet
 
- * the alphabet a - z
+ *
 
 */
 
 
 
-void print_alphabet(void)
+void print_alphabet_x10(void)
 
 {
 
-	int ch;
+	int line, ch;
 
 
 
-	for (ch = 'a'; ch <= 'z'; ++ch)
+	for (line = 0; line <= 9; ++line)
+
 	{
 
-		_putchar(ch);
+		for (ch = 'a'; ch <= 'z'; ++ch)
+
+			_putchar(ch);
+
+		_putchar('\n');
+
 	}
-	_putchar('\n');
 
 }
