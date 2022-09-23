@@ -1,48 +1,48 @@
-#include"main.h"
+#include <stdio.h>
 
-
+#include <stdlib.h>
 
 /**
 
- * main - Entry point
+ * main - main block
 
- *
+ * Description: computes and prints the sum of all the multiples of 3 or
 
- * Description: computes the sum of all
+ * 5 below 1024 (excluded), followed by a new line
 
- *		the multiples of 3 or 5
+ * Return: 0
 
- *		below 1024 (excluded)
-
- *
-
- * Return: Always 0 (Success)
-
-*/
-
-
+ */
 
 int main(void)
 
 {
 
-	int sum, num;
+	int c = 0;
+
+	int sum = 0;
 
 
 
-	for (num = 0; num < 1024; ++num)
+	while (c < 1024)
 
 	{
 
-		if ((num % 3 == 0) || (num % 5 == 0))
+		if (c % 3 == 0 || c % 5 == 0)
 
-			sum += num;
+		{
+
+			sum += c;
+
+		}
+
+
+
+		c++;
 
 	}
 
-	printf("%d\n", sum);
-
-
+	printf("%i\n", sum);
 
 	return (0);
 
